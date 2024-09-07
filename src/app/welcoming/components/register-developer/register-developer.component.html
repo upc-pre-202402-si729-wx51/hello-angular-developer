@@ -1,0 +1,9 @@
+<h1>New Developer</h1>
+<form [formGroup]="developerForm"
+  (ngSubmit)="myOnSubmit()">
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" name="first-name" required formControlName="firstName">
+
+  <label for="last-name">Last Name:</label>
+  <input id="last-name" type="text" name="last-name" required formControlName="lastName">
+</form>
